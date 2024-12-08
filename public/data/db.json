@@ -1,0 +1,8 @@
+[
+    { "id": 1, "species": "Tyrannosaurus rex", "type": "Carnivore", "height": "12ft", "period": "Cretaceous", "region": "North America and Asia", "year_discovered": "1892", "url": "https://en.wikipedia.org/wiki/Tyrannosaurus" },
+    { "id": 2, "species": "Triceratops", "type": "Herbivore", "height": "9.5ft", "period": "Cretaceous", "region": "North America", "year_discovered": "1887", "url": "https://en.wikipedia.org/wiki/Triceratops" },
+    { "id": 3, "species": "Brachiosaurus", "type": "Herbivore", "height": "45ft", "period": "Jurassic and Cretaceous", "region": "North America, Africa, and Europe", "year_discovered": "1958", "url": "https://en.wikipedia.org/wiki/Brachiosaurus" },
+    { "id": 4, "species": "Eoraptor", "type": "Omnivore", "height": "1ft", "period": "Teriassic", "region": "South America", "year_discovered": "1991", "url": "https://en.wikipedia.org/wiki/Eoraptor" },
+    { "id": 5, "species": "Allosaurus", "type": "Carnivore", "height": "16.5ft", "period": "Jurassic", "region": "North America, Africa, Australia, and Aisa", "year_discovered": "1869", "url": "https://en.wikipedia.org/wiki/Allosaurus"},
+    { "id": 6, "species": "Gallimimus", "type": "Omnivore", "height": "6.6ft", "period": "Teriassic", "region": "Aisa", "year_discovered": "1963", "url": "https://en.wikipedia.org/wiki/Gallimimus" }
+]

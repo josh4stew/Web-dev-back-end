@@ -1,0 +1,181 @@
+:root {
+    --color1: white;
+    --color2: rgb(233, 239, 236);
+    --color3: rgb(196, 218, 210);
+    --color4: rgb(106, 156, 137);
+    --color5: rgb(119, 174, 166);
+    --color6: rgb(63, 93, 89);
+}
+
+body {
+    background-color: var(--color1);
+    margin: 0;
+}
+
+.header {
+    font-size: large;
+}
+
+.grid {
+    display: grid;
+
+    grid-template-columns: 0.5fr 0.5fr 0.2fr 0.8fr;
+    grid-auto-rows: auto;
+
+    grid-template-areas:
+        "about about about about"
+        "skillsHead skillsHead expHead expHead"
+        "skills skills exp exp"
+        "projHead projHead projHead blogHead"
+        "proj proj proj blog"
+    ;
+
+    margin: 1%;
+    gap: 0.5rem;
+}
+
+nav {
+    background-color: var(--color5);
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+nav a,
+footer a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 5%;
+}
+
+.about {
+    grid-area: about;
+    background-color: var(--color2);
+    border: 1px solid black;
+    padding: 2%;
+}
+
+.aboutTxt {
+    float: right;
+    width: 48%;
+}
+
+.aboutTxt p {
+    padding: 5px;
+    margin: 5px;
+    margin-top: -9px;
+}
+
+.about img,
+.aboutPicTxt {
+    width: 48%;
+}
+
+.aboutPicTxt {
+    text-align: center;
+}
+
+.aboutPicTxt p {
+    font-size: large;
+    margin: 5px;
+}
+
+.skillsHead {
+    grid-area: skillsHead;
+}
+
+.expHead {
+    grid-area: expHead;
+}
+
+.skills, .exp {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.skills {
+    background-color: var(--color4);
+    grid-area: skills;
+}
+
+.exp {
+    background-color: var(--color4);
+    grid-area: exp;
+}
+
+.projHead {
+    grid-area: projHead;
+}
+
+.blogHead {
+    grid-area: blogHead;
+}
+
+.proj {
+    grid-area: proj;
+}
+
+.oval {
+    float: left;
+    width: 30%;
+    height: 300px;
+    margin: .25rem;
+    text-align: center;
+
+    background-color: var(--color5);
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.oval img {
+    margin-top: 15%;
+    width: 50%;
+}
+
+.oval p {
+    margin-top: 0%;
+    padding: 5px;
+}
+
+.blog {
+    grid-area: blog;
+    text-align: center;
+}
+
+.blog p {
+    border: 1px solid black;
+    background-color: var(--color3);
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    height: 210px;
+
+    margin-top: 0%;
+    padding: 5px;
+}
+
+.blog img {
+    width: 20%;
+    padding: 10px;
+}
+
+footer {
+    background-color: var(--color5);
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "about"
+            "skillsHead"
+            "skills"
+            "expHead"
+            "exp"
+            "projHead"
+            "proj"
+            "blogHead"
+            "blog"
+        ;
+    }
+}
